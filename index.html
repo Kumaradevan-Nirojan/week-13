@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <form class="Regform" action="homepage.html" onsubmit="return validate()">
+        <h2>VALIDATION FORM</h2>
+        <table>
+            <tr>
+                <div class="First_name">
+                    <th>First Name</th>
+                    <th>:</th>
+                    <td><input type="text" id="Fi_name" class="name" placeholder="Enter your Name" value=""></td>
+                    <td><span id="Fi_Name-Error" class="error-message"></span></td>
+                </div>
+            </tr>
+            <tr>
+                <div class="Last_name">
+                    <th>Last Name</th>
+                    <th>:</th>
+                    <td><input type="text" id="La_name" class="name" placeholder="Enter your Name" value=""></td>
+                    <td><span id="La_Name-Error" class="error-message"></span></td>
+                </div>
+            </tr>
+            <tr>
+                <div class="address">
+                    <th>Address</th>
+                    <th>:</th>
+                    <td><input type="text" id="address" class="address" placeholder="Enter your Address" value=""></td>
+                    <td><span id="Address-Error" class="error-message"></span></td>
+                </div>
+            </tr>
+            <tr>
+                <div class="phone">
+                    <th>Phone</th>
+                    <th>:</th>
+                    <td><input type="text" id="phone" class="phone" placeholder="Enter your Phone Number" value=""></td>
+                    <td><span id="Phone-Error" class="error-message"></span></td>
+                </div>
+            </tr>
+            <tr>
+                <div class="email">
+                    <th>Email</th>
+                    <th>:</th>
+                    <td><input type="text" id="email" class="email" placeholder="Enter your Email" value=""></td>
+                    <td><span id="Email-Error" class="error-message"></span></td>
+                </div>
+            </tr>
+            <tr>
+                <div class="password">
+                    <th>Password</th>
+                    <th>:</th>
+                    <td><input type="password" id="pass" class="password" placeholder="Enter your Password" value=""></td>
+                    <td><span id="Pass-Error" class="error-message"></span></td>
+                </div>
+            </tr>
+            
+        </table>
+        <div class="but">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+        
+       
+    </form>
+</body>
+</html>
